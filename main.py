@@ -33,3 +33,10 @@ savings2.withdraw(32)
 savings1.print_customer_information()
 savings2.print_customer_information()
 
+#test add interest method to savings
+savings1.addInterest()
+savings2.addInterest()
+
+savings1.print_customer_information()
+savings2.print_customer_information()
+
