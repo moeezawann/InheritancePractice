@@ -20,6 +20,9 @@ class BankAccount:
             self.current_balance -= val
             print("Withdraw of " + str(val) + " was successful")
 
+    def getBalance(self):
+        return self.current_balance
+
     
     def print_customer_information(self):
         print("Welcome to " + BankAccount.bank_title)
