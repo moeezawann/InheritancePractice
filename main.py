@@ -2,15 +2,6 @@ from savings import *
 from CheckingAccount import *
 
 
-# #TEST CHECKING ACCOUNT
-# #Have users create a checking account
-
-# #have users withdraw from checking
-
-
-# #have users deposit into checking
-
-##have user try to withdraw more than they have in checking
 
 #TEST SAVINGS ACCOUNT
 #Have users create a savings account
@@ -49,6 +40,13 @@ checking2 = Checkings("Robert Ramirez", 15, 10, 111111111, 999999999)
 checking1.deposit(4)
 checking2.deposit(5)
 
-#have user try to transfer more than they have from checking
-checking1.transfer_lim(12)
-checking2.transfer_lim(18)
+#have users withdraw from checking
+checking1.withdraw(6)
+checking2.withdraw(7)
+
+
+#have user try to transfer more than their transfer limit (50%)
+checking1.transfer(13)
+checking2.transfer(8)
+
+

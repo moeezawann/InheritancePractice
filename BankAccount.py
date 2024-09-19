@@ -23,6 +23,8 @@ class BankAccount:
     def getBalance(self):
         return self.current_balance
 
+    def setBalance(self, newBalance):
+        self.current_balance = newBalance
     
     def print_customer_information(self):
         print("Welcome to " + BankAccount.bank_title)
