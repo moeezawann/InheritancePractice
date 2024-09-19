@@ -6,7 +6,7 @@ class Checkings(BankAccount):
         self.__routing_num = routing_num
         self.__account_num = account_num
     
-    def transfer(self,amount):
+    def transfer(self, amount):
        # will only lets user to transfer 50% of currrent balance
        limit = self.getBalance() * .50
 
