@@ -1,5 +1,5 @@
 from savings import *
-#from CheckingAccount import *
+from CheckingAccount import *
 
 
 # #TEST CHECKING ACCOUNT
@@ -40,3 +40,15 @@ savings2.addInterest()
 savings1.print_customer_information()
 savings2.print_customer_information()
 
+#TEST Checking ACCOUNT
+#Have users create a chekcing account
+checking1 = Checkings("Anthony Ramirez", 25, 5, 123456789, 987654321)
+checking2 = Checkings("Robert Ramirez", 15, 10, 111111111, 999999999)
+
+#have users deposit into checking
+checking1.deposit(4)
+checking2.deposit(5)
+
+#have user try to transfer more than they have from checking
+checking1.transfer_lim(12)
+checking2.transfer_lim(18)
