@@ -46,7 +46,7 @@ checking2.withdraw(7)
 
 
 #have user try to transfer more than their transfer limit (50%)
-checking1.transfer(13)
+checking1.transfer(6)
 checking2.transfer(8)
 
 
